@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+@Html.Raw(TempData["msg"])
+
+<h2>Welcome to Dashboard @Session["userName"]</h2>
+
+<h3>@Html.ActionLink("Logout","Logout")</h3>
+
